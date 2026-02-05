@@ -34,7 +34,7 @@ input,textarea,select{
 
 
 ::placeholder {
-  transform-origin: right;
+  transform-origin: left;
   transition: var(--transition);
 }
 
