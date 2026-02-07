@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventures | Jordan Trail Adventures</title>
+    <meta name="description" content="Choose your adventure along the Jordan Trail. From the green north to the red desert of Wadi Rum.">
+    <link rel="icon" type="image/avif" href="../images/logo.avif">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+     <nav class="site-navbar">
+        <div class="container nav-container">
+            <!-- Logo -->
+        <a href="../index.html" class="logo-desktop nav-logo">
+                <img src="../images/logo.avif" alt="Jordan Trail Adventures" class="logo-img">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-links desktop-nav container">
+                            <a href="../index.html" class="nav-logo logo-mobile">
+                <img src="../images/logo.avif" alt="Jordan Trail Adventures" class="logo-img">
+            </a>
+                <a href="../index.html" class="nav-link ">
+                    Home
+                    <span class="link-underline"></span>
+                </a>
+                <a href="./about.html" class="nav-link ">
+                    About
+                    <span class="link-underline"></span>
+                </a>
+                <a href="./adventures.html" class="nav-link active">
+                    Adventures
+                    <span class="link-underline"></span>
+                </a>
+                <a href="./services.html" class="nav-link">
+                    Services
+                    <span class="link-underline"></span>
+                </a>
+                <a href="./tips.html" class="nav-link">
+                    Tips
+                    <span class="link-underline"></span>
+                </a>
+                <a href="./contact.html" class="nav-link">
+                    Contact
+                    <span class="link-underline"></span>
+                </a>
+                <a href="./adventures.html" class="btn-plan-trip">Plan Trip</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu overlay-style">
+            <div class="mobile-menu-content">
+                <div class="menu-item">
+                    <a href="../index.html" class="mobile-link-large ">Home</a>
+                </div>
+                <div class="menu-item">
+                    <a href="./about.html" class="mobile-link-large ">About</a>
+                </div>
+                <div class="menu-item">
+                    <a href="./adventures.html" class="mobile-link-large active">Adventures</a>
+                </div>
+                <div class="menu-item">
+                    <a href="./services.html" class="mobile-link-large">Services</a>
+                </div>
+                <div class="menu-item">
+                    <a href="./tips.html" class="mobile-link-large">Tips</a>
+                </div>
+                <div class="menu-item">
+                    <a href="./contact.html" class="mobile-link-large">Contact</a>
+                </div>
+                <div class="menu-item pt-8">
+                    <a href="./adventures.html" class="btn-mobile-large">Start Your Journey</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="adventure-main">
+        <!-- Hero Section -->
+        <div class="adventure-hero">
+            <div class="hero-image-container">
+                <img src="../images/img.jfif" alt="Dana to Petra" class="hero-img">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content-wrapper">
+                <div class="hero-text-container">
+                    <h2 class="hero-subtitle" data-aos="fade-up">Adventure Details</h2>
+                    <h1 class="hero-title-detail" data-aos="fade-up" data-aos-delay="200">Dana to Petra</h1>
+                    <p class="hero-description" data-aos="fade-up" data-aos-delay="400">The Inca Trail of the Middle East</p>
+
+                    <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
+                        <div class="stat-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path>
+                            </svg>
+                            5 Days
+                        </div>
+                        <div class="stat-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"></path><path d="m14.5 12.5 2-2"></path><path d="m11.5 9.5 2-2"></path><path d="m8.5 6.5 2-2"></path><path d="m17.5 15.5 2-2"></path>
+                            </svg>
+                            72km
+                        </div>
+                        <div class="stat-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+                            </svg>
+                            Hard
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Details Section -->
+        <div class="adventure-container">
+            <!-- Left Column: Itinerary -->
+            <div class="content-column">
+                <h2 class="section-title">Overview</h2>
+                <p class="section-description">Rated by National Geographic as one of the best hikes in the world. This trek takes you through the biosphere reserve of Dana, along the mountain ridges of Wadi Araba, and into the ancient Nabataean city of Petra via the 'Back Door' monastery route.</p>
+
+                <div class="tabs-container">
+                    <button class="tab-btn inactive" onclick="openTab('daily-itinerary', this)">Daily Itinerary</button>
+                    <button class="tab-btn active" onclick="openTab('included-content', this)">Included</button>
+                </div>
+
+                <div id="daily-itinerary" class="tab-content timeline-wrapper" style="display: none;">
+                    <!-- Day 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="marker-circle">1</div>
+                            <div class="marker-line"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 class="day-title">Dana to Wadi Feynan</h4>
+                            <span class="distance-badge">14km</span>
+                            <p class="day-desc">Descent from the Mediterranean climate of Dana Village (1200m) to the desert landscape of Wadi Feynan (300m).</p>
+                        </div>
+                    </div>
+
+                    <!-- Day 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="marker-circle">2</div>
+                            <div class="marker-line"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 class="day-title">Wadi Feynan to Wadi Barwas</h4>
+                            <span class="distance-badge">18km</span>
+                            <p class="day-desc">A challenging day crossing the desert floor and ascending into the rugged mountains.</p>
+                        </div>
+                    </div>
+
+                    <!-- Day 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="marker-circle">3</div>
+                            <div class="marker-line"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 class="day-title">Wadi Barwas to Ras Al-Feid</h4>
+                            <span class="distance-badge">16km</span>
+                            <p class="day-desc">Climbing higher into the mountains with spectacular views of the Wadi Araba desert below.</p>
+                        </div>
+                    </div>
+
+                    <!-- Day 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="marker-circle">4</div>
+                            <div class="marker-line"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 class="day-title">Ras Al-Feid to Little Petra</h4>
+                            <span class="distance-badge">14km</span>
+                            <p class="day-desc">Passing through the sandstone mountains to the Neolithic site of Beidha and Little Petra.</p>
+                        </div>
+                    </div>
+
+                    <!-- Day 5 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="marker-circle">5</div>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 class="day-title">Little Petra to The Monastery</h4>
+                            <span class="distance-badge">10km</span>
+                            <p class="day-desc">Entering Petra via the secret back route, arriving at the Monastery before descending to the Treasury.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="included-content" class="tab-content" style="display: block;">
+                    <div class="included-grid">
+                        <div>
+                            <h4 class="included-title earth">What's Included</h4>
+                            <div class="included-list">
+                                <div class="included-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check check-icon"><path d="M20 6 9 17l-5-5"></path></svg>
+                                    <span>Experienced Bedouin Guide</span>
+                                </div>
+                                <div class="included-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check check-icon"><path d="M20 6 9 17l-5-5"></path></svg>
+                                    <span>All meals (Breakfast, Lunch, Dinner)</span>
+                                </div>
+                                <div class="included-item">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check check-icon"><path d="M20 6 9 17l-5-5"></path></svg>
+                                    <span>Camping equipment (Tents, Mattresses)</span>
+                                </div>
+                                <div class="included-item">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check check-icon"><path d="M20 6 9 17l-5-5"></path></svg>
+                                    <span>Jeep support for luggage</span>
+                                </div>
+                                <div class="included-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check check-icon"><path d="M20 6 9 17l-5-5"></path></svg>
+                                    <span>Transportation to/from Amman</span>
+                                </div>
+                                <div class="included-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check check-icon"><path d="M20 6 9 17l-5-5"></path></svg>
+                                    <span>Petra Entrance Fees</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="included-title">Not Included</h4>
+                            <div class="included-list">
+                                <div class="included-item not-included">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x cross-icon"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+                                    <span>Flights</span>
+                                </div>
+                                <div class="included-item not-included">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x cross-icon"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+                                    <span>Travel Insurance</span>
+                                </div>
+                                <div class="included-item not-included">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x cross-icon"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+                                    <span>Personal hiking gear</span>
+                                </div>
+                                <div class="included-item not-included">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x cross-icon"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+                                    <span>Tips for guide/driver</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    function openTab(tabId, element) {
+                        // Hide all tab content
+                        var contents = document.getElementsByClassName('tab-content');
+                        for (var i = 0; i < contents.length; i++) {
+                            contents[i].style.display = 'none';
+                        }
+
+                        // Deactivate all tab buttons
+                        var buttons = document.getElementsByClassName('tab-btn');
+                        for (var i = 0; i < buttons.length; i++) {
+                            buttons[i].classList.remove('active');
+                            buttons[i].classList.add('inactive');
+                        }
+
+                        // Show selected tab content
+                        document.getElementById(tabId).style.display = 'block';
+
+                        // Activate the clicked button
+                        element.classList.remove('inactive');
+                        element.classList.add('active');
+                    }
+                </script>
+            </div>
+
+            <!-- Right Column: Booking Card -->
+            <div class="sidebar-column">
+                <div class="booking-card">
+                    <h3 class="booking-title">Book This Trip</h3>
+                    <p class="booking-subtitle">Private groups available year-round.</p>
+
+                    <div class="mb-8">
+                        <div class="info-row">
+                            <span class="info-label">Group Size</span>
+                            <span class="info-value">2 - 12 People</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Best Season</span>
+                            <span class="info-value">Spring / Autumn</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Level</span>
+                            <span class="info-value highlight">Advanced</span>
+                        </div>
+                    </div>
+
+                    <a class="btn-book" href="./contact.html">
+                        <span>Request Quote</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.5rem;"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                    </a>
+
+                    <a class="btn-ask" href="./contact.html">
+                        <span>Ask a Question</span>
+                    </a>
+
+                    <div class="secure-note">
+                        <p class="secure-text">Secure booking. Local guides.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Section -->
+                <div class="footer-brand-section">
+                    <a href="../index.html" class="footer-logo-link">
+                        <img src="../images/logo.avif" alt="Jordan Trail Adventures" class="footer-logo">
+                    </a>
+                    <div class="brand-text">
+                        <h3>Jordan Trail Adventures</h3>
+                        <p>Walking the ancient paths of Jordan with local Bedouin guides. More than a journey — a story written across Jordan’s landscapes.</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="mailto:hello@jordantrailadventures.com" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                           <svg viewBox="0 0 24 24" fill="currentColor" height="20" width="20"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-2.5-8c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5zm-4 0c0-1.38 1.12-2.5 2.5-2.5S10.5 11.12 10.5 12.5 9.38 15 8 15s-2.5-1.12-2.5-2.5zm8 0c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Explore Links -->
+                <div class="footer-nav">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="./about.html"><span class="hover-line"></span>About Us</a></li>
+                        <li><a href="./adventures.html"><span class="hover-line"></span>Our Adventures</a></li>
+                        <li><a href="./services.html"><span class="hover-line"></span>Services</a></li>
+                        <li><a href="./tips.html"><span class="hover-line"></span>Travel Tips</a></li>
+                    </ul>
+                </div>
+
+                <!-- Adventures Links -->
+                <div class="footer-nav">
+                    <h4>Adventures</h4>
+                    <ul>
+                        <li><a href="./adventures.html"><span class="hover-line"></span>Dana to Petra</a></li>
+                        <li><a href="./adventures.html"><span class="hover-line"></span>Wadi Rum Expedition</a></li>
+                        <li><a href="./adventures.html"><span class="hover-line"></span>The North Trek</a></li>
+                        <li><a href="./adventures.html"><span class="hover-line"></span>Dead Sea Relax</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Trust -->
+                <div class="footer-contact">
+                    <h4>Contact & Trust</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span>Wadi Musa, Petra<br>Jordan</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                            <a href="mailto:hello@jordantrailadventures.com">hello@jordantrailadventures.com</a>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <a href="tel:+962712345678">+962 7 1234 5678</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="tripadvisor-badge">
+                        <div class="ta-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+                        </div>
+                        <div class="ta-text">
+                            <span class="ta-title">TripAdvisor</span>
+                            <span class="ta-subtitle">Read our reviews</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jordan Trail Adventures. All rights reserved.</p>
+                <p>Designed & Developed by Sigma Agency – 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    <script src="../js/script.js" defer></script>
+
+</body>
+</html>

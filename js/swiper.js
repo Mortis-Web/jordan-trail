@@ -1,7 +1,8 @@
 // Initialize Hero Swiper
+// Note: Kept 1500ms speed here as 'fade' effects usually look better with a slower transition
 var heroSwiper = new Swiper(".hero-swiper", {
     effect: 'fade',
-    allowTouchMove: false, // Usage: Disables dragging
+    allowTouchMove: false,
     fadeEffect: {
         crossFade: true
     },
@@ -27,6 +28,7 @@ var reviewsSwiper = new Swiper(".reviews-swiper", {
     spaceBetween: 32,
     initialSlide: 1,
     loop: true,
+    speed: 750, // Matched smoothness
     autoplay: {
         delay: 4000,
         disableOnInteraction: false,
@@ -37,7 +39,7 @@ var reviewsSwiper = new Swiper(".reviews-swiper", {
         onlyInViewport: true,
     },
     pagination: {
-        el: ".swiper-pagination",
+        el: ".reviews-swiper .swiper-pagination", // Scoped to container
         clickable: true,
     },
     navigation: {
@@ -50,16 +52,16 @@ var reviewsSwiper = new Swiper(".reviews-swiper", {
             spaceBetween: 20,
         },
         640: {
-            slidesPerView: 1, /* sm breakpoint usually */
+            slidesPerView: 1,
             spaceBetween: 20,
         },
         768: {
             slidesPerView: 2,
-            spaceBetween: 32,
+            spaceBetween: 30,
         },
         1024: {
             slidesPerView: 3,
-            spaceBetween: 32,
+            spaceBetween: 30,
         },
     },
 });
@@ -70,6 +72,7 @@ var journeysSwiper = new Swiper(".journeys-swiper", {
     spaceBetween: 32,
     initialSlide: 1,
     loop: true,
+    speed: 750, // Matched smoothness
     autoplay: {
         delay: 4500,
         disableOnInteraction: false,
@@ -98,12 +101,14 @@ var journeysSwiper = new Swiper(".journeys-swiper", {
         },
     },
 });
+
 // Initialize Adventure Swiper
 var adventureSwiper = new Swiper(".adventure-swiper", {
     slidesPerView: 1,
     spaceBetween: 32,
     initialSlide: 1,
     loop: true,
+    speed: 750, // Matched smoothness
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
