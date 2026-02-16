@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adventures | Jordan Trail Adventures</title>
-    <meta name="description" content="Choose your adventure along the Jordan Trail. From the green north to the red desert of Wadi Rum.">
+    <title>Blog Title | Jordan Trail Adventures</title>
+    <meta name="description" content="Read our latest stories and updates from the Jordan Trail.">
     <link rel="icon" type="image/avif" href="../images/logo.avif">
 
     <!-- Fonts -->
@@ -18,9 +18,6 @@
 
     <!-- AOS Animation -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-
-    <!-- Flatpickr Date Picker -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/reset.css">
@@ -53,19 +50,19 @@
                     Adventures
                     <span class="link-underline"></span>
                 </a>
-                <a href="./services.html" class="nav-link ">
+                <a href="./services.html" class="nav-link">
                     Services
                     <span class="link-underline"></span>
                 </a>
-                <a href="./tips.html" class="nav-link ">
+                <a href="./tips.html" class="nav-link">
                     Tips
                     <span class="link-underline"></span>
                 </a>
-                <a href="./blogs.html" class="nav-link">
+                <a href="./blogs.html" class="nav-link active">
                     Blogs
                     <span class="link-underline"></span>
                 </a>
-                <a href="./contact.html" class="nav-link active">
+                <a href="./contact.html" class="nav-link">
                     Contact
                     <span class="link-underline"></span>
                 </a>
@@ -91,16 +88,16 @@
                     <a href="./adventures.html" class="mobile-link-large ">Adventures</a>
                 </div>
                 <div class="menu-item">
-                    <a href="./services.html" class="mobile-link-large ">Services</a>
+                    <a href="./services.html" class="mobile-link-large">Services</a>
                 </div>
                 <div class="menu-item">
-                    <a href="./tips.html" class="mobile-link-large ">Tips</a>
+                    <a href="./tips.html" class="mobile-link-large">Tips</a>
                 </div>
                 <div class="menu-item">
-                    <a href="./blogs.html" class="mobile-link-large">Blogs</a>
+                    <a href="./blogs.html" class="mobile-link-large active">Blogs</a>
                 </div>
                 <div class="menu-item">
-                    <a href="./contact.html" class="mobile-link-large active">Contact</a>
+                    <a href="./contact.html" class="mobile-link-large">Contact</a>
                 </div>
                 <div class="menu-item pt-8">
                     <a href="./adventures.html" class="btn-mobile-large">Start Your Journey</a>
@@ -110,95 +107,77 @@
     </nav>
 
     <!-- Main Content -->
-    <main class="contact-main">
+    <main class="adventures-main">
         <!-- Hero Section -->
-        <div class="contact-hero">
+        <div class="adventures-hero">
             <div class="hero-bg">
-                <img src="../images/img.jfif" alt="Contact Us" class="hero-image">
+                <img src="../images/img.jfif" alt="Jordan Trail Adventures" class="hero-image">
             </div>
             <div class="hero-overlay-dark"></div>
-            <div class="hero-content pb">
+            <div class="hero-content">
                 <div class="hero-inner">
-                    <h2 class="hero-subtitle" data-aos="fade-up" data-aos-duration="800">Start Your Adventure</h2>
-                    <h1 class="hero-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Contact Us</h1>
-                    <p class="hero-description" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">Ready to walk the path? Fill out the form below and our team will build your perfect itinerary.</p>
+                    <h2 class="hero-subtitle" data-aos="fade-up" data-aos-duration="800">Stories from the Trail</h2>
+                    <h1 class="hero-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">blog title</h1>
                 </div>
             </div>
         </div>
 
-        <!-- Contact Form Section -->
-        <section class="contact-form-section">
+        <!-- Blog Content Section -->
+        <section class="blog-page-content">
             <div class="container">
-                <div class="contact-form-wrapper">
-                    <form class="contact-form">
-                        <!-- Name and Email Row -->
-                        <div class="contact-form-row">
-                            <div class="contact-form-field">
-                                <label class="contact-form-label">Full Name</label>
-                                <input name="name" class="contact-form-input" placeholder="John Doe">
-                            </div>
-                            <div class="contact-form-field">
-                                <label class="contact-form-label">Email Address</label>
-                                <input name="email" type="email" class="contact-form-input" placeholder="john@example.com">
-                            </div>
-                        </div>
-
-                        <!-- Phone and Nationality Row -->
-                        <div class="contact-form-row">
-                            <div class="contact-form-field">
-                                <label class="contact-form-label">Phone / WhatsApp</label>
-                                <input name="phone" type="tel" class="contact-form-input" placeholder="+1 234 567 8900">
-                            </div>
-                            <div class="contact-form-field">
-                                <label class="contact-form-label">Nationality</label>
-                                <input name="nationality" class="contact-form-input" placeholder="Your Nationality">
-                            </div>
-                        </div>
-
-                        <!-- Trip Details Row -->
-                        <div class="contact-form-row-triple">
-                            <div class="contact-form-field">
-                                <label class="contact-form-label">No. of People</label>
-                                <select name="people" class="contact-form-select">
-                                    <option value="1">1 Person</option>
-                                    <option value="2">2 People</option>
-                                    <option value="3-5">3-5 People</option>
-                                    <option value="6+">6+ People</option>
-                                </select>
-                            </div>
-                            <div class="contact-form-field">
-                                <label class="contact-form-label">Trip Date</label>
-                                <input type="text" name="date" class="contact-form-input contact-date-picker" placeholder="Select date">
-                            </div>
-                            <div class="contact-form-field">
-                                <label class="contact-form-label">Duration (Days)</label>
-                                <select name="duration" class="contact-form-select">
-                                    <option value="1-3">1-3 Days</option>
-                                    <option value="4-7">4-7 Days</option>
-                                    <option value="8-14">8-14 Days</option>
-                                    <option value="15+">15+ Days</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <!-- Message Field -->
-                        <div class="contact-form-field-full">
-                            <label class="contact-form-label">Message / Specific Requests</label>
-                            <textarea name="message" rows="5" class="contact-form-textarea" placeholder="Tell us about your fitness level, interests, or any questions..."></textarea>
-                        </div>
-
-                        <!-- Submit Button -->
-                        <div class="contact-form-submit">
-                            <button type="submit" class="contact-form-button">
-                                <span>Send Inquiry</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M5 12h14"></path>
-                                    <path d="m12 5 7 7-7 7"></path>
+                <article class="mainBlog">
+                    <div class="blogBanner" data-aos="zoom-in" data-aos-duration="1200">
+                        <span class="general" data-aos="fade-left" data-aos-delay="600">General</span>
+                        <img src="../images/img.jfif" alt="blog banner">
+                    </div>
+                    <div class="blogDesc" data-aos="fade-up" data-aos-delay="200">
+                        <h1 class="trail-title" style="font-size: 3rem; height: auto; -webkit-line-clamp: unset; line-clamp: unset; margin-bottom: 24px;">Because your Travelers Deserve More: Introducing Jordan Trail Adventures' Remote Support!</h1>
+                        <div class="trail-meta" style="justify-content: flex-start; margin-bottom: 0; gap: 32px;">
+                            <div class="trail-meta-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                    <line x1="16" x2="16" y1="2" y2="6"></line>
+                                    <line x1="8" x2="8" y1="2" y2="6"></line>
+                                    <line x1="3" x2="21" y1="10" y2="10"></line>
                                 </svg>
-                            </button>
+                                <span style="font-size: 1rem; font-weight: 500;">May 10, 2025</span>
+                            </div>
+                            <div class="trail-meta-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                                <span style="font-size: 1rem; font-weight: 500;">By Sigma Agency</span>
+                            </div>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </article>
+
+                <article class="mainBlogInfo" data-aos="fade-up">
+                    <p>At <span>Jordan Trail Adventures</span>, we believe that exceptional travel experiences are defined by the details. As your trusted partner in Jordan, we are proud to launch our Remote Support Service—a dedicated English-speaking support service designed to elevate every traveler’s journey.</p>
+                    <h2>What is our Remote Support?</h2>
+                    <p>This remote desk provides your clients with direct, real-time access to a dedicated personal guide via WhatsApp or direct mobile call. Available throughout their stay in Jordan, our team offers personalized assistance with:</p>
+                </article>
+
+                <article class="mainBlogInfo" data-aos="fade-up">
+                    <ul>
+                        <li>Restaurant and dining recommendations</li>
+                        <li>Tailored activity suggestions and insider tips</li>
+                        <li>Assistance with personal or last-minute requests</li>
+                    </ul>
+                </article>
+
+                <article class="mainBlogInfo" data-aos="fade-up">
+                    <p>Whether it’s checking in luggage prior to the flight, communicating a pop-up event happening during the traveler’s stay, the best cocktail spots in Aqaba and prime happy-hour pubs along the Dead Sea, a list of the best Mediterranean restaurants near your accommodation in Amman, or an unforgettable add-on experience in Wadi Rum—our support team is a direct connection to insider tips and hidden gems known only to local Jordanians.</p>
+
+                    <h2>Built for Travelers. Backed by Jordan Trail Adventures.</h2>
+                    <p>Designed meticulously and with the utmost care, this value-added service enhances your offerings without adding any operational load. It’s ideal for Frequent Independent Travelers (FITs), small groups, VIPs, and any travelers who appreciate flexibility, convenience, and a high level of personalized care.</p>
+
+                    <p>By incorporating our Remote Support into your Jordan programs, travelers gain access to high-quality spots, tips, and destinations, along with a local expert they can trust.</p>
+
+                    <h2>Seamless Support, Elevated Experiences</h2>
+                    <p>At Jordan Trail Adventures, we don’t just manage destinations—we curate them. This support service is a testament to our dedication to excellence, responsiveness, guest satisfaction, and empowering your success in Jordan.</p>
+                </article>
             </div>
         </section>
     </main>
@@ -293,18 +272,15 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="../js/script.js" defer></script>
+
     <script>
-        // Initialize Flatpickr date picker
-        document.addEventListener('DOMContentLoaded', function() {
-            flatpickr('.contact-date-picker', {
-                dateFormat: 'Y-m-d',
-                minDate: 'today',
-                altInput: true,
-                altFormat: 'F j, Y',
-                theme: 'light'
-            });
+        // AOS Initialization
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
         });
     </script>
 
