@@ -3,6 +3,7 @@
 var heroSwiper = new Swiper(".hero-swiper", {
     effect: 'fade',
     allowTouchMove: false,
+    autoHeight: true,
     fadeEffect: {
         crossFade: true
     },

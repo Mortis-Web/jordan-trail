@@ -198,7 +198,7 @@ nav.scrolled {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background-color: black;
     backdrop-filter: blur(24px);
     display: flex;
@@ -611,25 +611,35 @@ footer a{
 /* Hero Section */
 .hero-slider-section {
     position: relative;
-    height: 100dvh;
+    min-height: 100vh;
     width: 100%;
     padding: 0 !important;
     overflow: hidden;
     background-color: #0c0c0c; /* bg-night-900 */
+    img{
+        min-height: 100vh;
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+.hero-swiper,.swiper-wrapper,.swiper-slide{
+    /* min-height removed for dynamic height */
 }
 
 /* We will likely remove the spacer in HTML or overlay nav, for now assume overlay nav logic will be handled */
 
 .hero-swiper {
-    height: 100%;
     width: 100%;
 }
 
 .hero-slide {
     position: relative;
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
-    overflow: hidden;
 }
 
 .hero-bg {
@@ -658,16 +668,16 @@ footer a{
 }
 
 .hero-content {
-    position: absolute;
-    inset: 0;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 24px;
+    padding: 120px 24px 80px;
     z-index: 10;
     color: white;
+    min-height: 100vh;
 }
 
 .hero-subtitle {
@@ -744,23 +754,44 @@ header h1{
     color: var(--footer-bg) !important;
 }
 
+/* Make hero buttons smaller on screens 768px and above */
+@media (max-width: 768px) {
+    .btn-hero {
+        padding: 16px 32px !important;
+        font-size: 0.875rem !important;
+        max-width: fit-content !important;
+        margin-inline: auto !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-hero {
+       padding: 16px 24px !important;
+        font-size: 0.75rem !important;
+    }
+}
+
+
+
 /* Scroll Indicator */
 .scroll-indicator {
     position: absolute;
-    bottom: 40px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .scroll-indicator {
     position: absolute;
-    bottom: 40px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
     color: rgba(255,255,255,0.8);
+    scale: 0.85;
+    transform-origin: center left;
     z-index: 20;
     cursor: pointer;
     animation: scroll-bounce-vertical 2s ease-in-out infinite;
@@ -810,7 +841,7 @@ header h1{
 
 /* Hero Pagination */
 .hero-swiper .swiper-pagination {
-    bottom: 115px !important; /* Move up to avoid scroll indicator overlap if any */
+    bottom: 100px !important; /* Move up to avoid scroll indicator overlap if any */
     z-index: 30; /* Higher Z-index */
     position: absolute;
     width: 100%;
@@ -1778,11 +1809,16 @@ min-height: fit-content !important;
     .hero-buttons { flex-direction: row; }
 }
 
+@media (max-width:1024px){
+    .hero-desc{
+        font-size: 1.125rem !important;
+    }
+}
 @media (min-width: 768px) {
     .mobile-link-large { font-size: 2.25rem; /* md:text-4xl */ }
     .hero-title { font-size: 5rem; /* Decreased from 5.5rem */ }
     .hero-subtitle { font-size: 1rem; /* Decreased from 1.125rem */ }
-    .hero-desc { font-size: 1.5rem; /* Decreased from 1.75rem */ }
+    .hero-desc { font-size: 1.25rem; /* Decreased from 1.75rem */ }
     .reviews-grid { grid-template-columns: repeat(2, 1fr); }
     .footer-grid { grid-template-columns: repeat(2, 1fr); }
     .footer-bottom { flex-direction: row; }
@@ -1808,7 +1844,7 @@ min-height: fit-content !important;
 }
 
 @media (min-width: 1024px) {
-    .hero-title { font-size: 6.5rem; /* Decreased from 7rem */ }
+    .hero-title { font-size: 6rem; /* Decreased from 7rem */ }
     .logo-desktop{ display: none; }
     .logo-mobile{ display: block; }
     .reviews-grid { grid-template-columns: repeat(3, 1fr); }
@@ -1847,7 +1883,6 @@ min-height: fit-content !important;
     }
     .btn-hero{
         white-space: nowrap;
-        font-size: 0.9rem !important;
     }
 }
 
@@ -1884,7 +1919,7 @@ min-height: fit-content !important;
     text-align: center;
     padding: 0 24px;
     z-index: 10;
-    padding-top: 80px;
+    padding-top: 20px;
 }
 
 .hero-inner {
@@ -1905,7 +1940,7 @@ min-height: fit-content !important;
 
 .hero-title {
     font-family: 'Playfair Display', serif;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 700;
     color: white;
     margin-bottom: 24px;
@@ -1920,25 +1955,33 @@ min-height: fit-content !important;
 }
 
 /* Hero Responsive Styles */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .hero-subtitle {
-        font-size: 1.125rem;
+        font-size: 1.5rem;
     }
 
     .hero-title {
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
+
 }
 
 @media (min-width: 1024px) {
     .hero-title {
-        font-size: 5.5rem;
+        font-size: 5rem;
     }
 }
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        min-height: fit-content !important;
     }
 
     .hero-description {
@@ -1954,7 +1997,7 @@ min-height: fit-content !important;
 .adventures-main {
     flex-grow: 1;
     background-color: #faf7f2; /* sand-50 */
-    min-height: 100vh;
+    min-height: 110vh;
 }
 
 /* Adventures Hero Section */
@@ -2324,7 +2367,25 @@ min-height: fit-content !important;
 }
 
 /* Extra Small Screens */
+
+@media (max-width:768px){
+    .timeline-item{
+        flex-direction: column !important;
+    }
+}
+
 @media (max-width: 480px) {
+    .about-timeline-section,.about-timeline-section .container{
+        padding-inline: 0  !important;
+    }
+.adventure-header h2{
+  font-size: 2.5rem !important;
+}
+
+.btn-text-content{
+    white-space: nowrap;
+    font-size: 0.9rem;
+}
     .adventures-hero {
         height: 60vh;
         min-height: 400px;
@@ -2357,7 +2418,7 @@ min-height: fit-content !important;
 .services-main {
     flex-grow: 1;
     background-color: white;
-    min-height: 100vh;
+    min-height: 110vh;
 }
 
 /* Services Hero Section */
@@ -2574,7 +2635,7 @@ min-height: fit-content !important;
 .tips-main {
     position: relative;
     background-color: #faf7f2;
-    min-height: 100vh;
+    min-height: 110vh;
 }
 
 /* Tips Hero Section */
@@ -2862,7 +2923,7 @@ min-height: fit-content !important;
 /* Contact Main Container */
 .contact-main {
     background-color: #faf7f2;
-    min-height: 100vh;
+    min-height: 110vh;
 }
 
 /* Contact Hero Section */
@@ -3137,7 +3198,7 @@ min-height: fit-content !important;
 .adventure-main {
     flex-grow: 1;
     background-color: #faf7f2; /* bg-sand-50 */
-    min-height: 100vh;
+    min-height: 110vh;
 }
 
 .adventure-hero {
