@@ -930,8 +930,19 @@ header h1{
     color: rgb(42, 184, 21); /* text-earth-500 */
     transition: color 0.3s ease;
 }
+.ta-icon img{
+width: 30px;
+height: 30px;
+border-radius: 50%;
+object-fit: cover;
+}
 .social-icon:last-of-type{
     color: rgb(42, 184, 21) !important; /* text-earth-500 */
+}
+
+
+.swiper-slide:has(.review-card){
+    user-select: none;
 }
 
 .tripadvisor-badge:hover .ta-icon, .tripadvisor-badge:hover .ta-title {
