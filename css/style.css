@@ -927,8 +927,11 @@ header h1{
 }
 
 .ta-icon {
-    color: var(--primary-color); /* text-earth-500 */
+    color: rgb(42, 184, 21); /* text-earth-500 */
     transition: color 0.3s ease;
+}
+.social-icon:last-of-type{
+    color: rgb(42, 184, 21) !important; /* text-earth-500 */
 }
 
 .tripadvisor-badge:hover .ta-icon, .tripadvisor-badge:hover .ta-title {
